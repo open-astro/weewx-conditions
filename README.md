@@ -1,5 +1,5 @@
-# weewx-json
-Extension for JSON output from weewx
+# WeeWX-JSON
+Extension for JSON output from WeeWX
 
 This extension provides a skin that is not designed to be used from a web browser, rather for consumption from another
 type of client...smartphone app, dynamic javascript page, automated bot.
@@ -10,16 +10,22 @@ the JSON format for easier consumption by clients.
 
 ## Installing
 
-Download the latest release from the [github releases](https://github.com/teeks99/weewx-json/releases) page
+Download the latest release from the [github releases](https://github.com/open-astro/WeeWX-JSON/releases) page
 
-Run `wee_extension --install=weewx-json_X.X.tar.gz`
+Run `weectl extension install WeeWX-JSON_X.X.tar.gz`
 
 This will automatically add a `[[JSONReport]]` to your weewx.conf file that will include the `weewx.json` in your 
 `HTML_ROOT`. 
 
+## Generated files
+
+- `weewx.json`: full current + period min/max summary output
+- `current_minimal.json`: compact current conditions
+- `lcd_datasheet.json`: NOAA-style layered output (daily 15-minute captures + weekly/monthly daily summaries + yearly monthly summaries)
+
 ## Uninstalling
 
-Run `wee_extension --uninstall=weewx-json`
+Run `weectl extension uninstall WeeWX-JSON`
 
 ## Example Output
 
