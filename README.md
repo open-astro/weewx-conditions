@@ -14,6 +14,9 @@ All outputs are generated from WeeWX archive records (typically 15-minute interv
 
 The data closely aligns with the information found in WeeWX’s default *Seasons* report (`rss.xml`), while extending it with automation-friendly structures and NOAA-style layered reporting.
 
+### Project lineage
+
+This project builds on concepts and prior work originally developed by **Tom Kent** in the [`weewx-json`](https://github.com/teeks99/weewx-json) extension. WeeWX-Conditions continues that foundation with an updated data model, expanded condition outputs, and active maintenance, while remaining compatible with modern WeeWX installations.
 
 ## Installing
 
